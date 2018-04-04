@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { storeAnswer, correctAnswer } from '../actions';
 
 class Alternative extends React.Component {
-  // Tar in alternativet ifrån QuestionTable
+  // Recieves alternative from QuestionTable
   constructor(props){
     super(props);
   }
