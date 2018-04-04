@@ -21,7 +21,6 @@ class QuestionHandler extends React.Component {
 
     return (
       <div>
-        QuestionHandler
         <QuestionTable
           question={question.question}
           alternatives={question.alternatives}

@@ -10,13 +10,13 @@ class Game extends React.Component {
     super();
     this.state = {
       actionClassName: 'btn btn--start',
-      hasStarted: true,
+      hasStarted: false,
       showResult: false,
       disabled: false,
       isLoading: false,
       error: null
     }
-    this.numberOfQuestions = 2;
+    this.numberOfQuestions = 5;
   }
 
   handleClickAction = () => {
@@ -30,7 +30,7 @@ class Game extends React.Component {
   render() {
 
     const showResult = this.props.userAnswers.length === this.numberOfQuestions;
-    
+
     if (showResult){
       return (
         <Results
@@ -53,7 +53,6 @@ class Game extends React.Component {
 
     return (
       <div>
-        Game
         <QuestionHandler />
       </div>
     );
